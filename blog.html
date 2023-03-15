@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Hero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                common: ["Rubik", "sans-serif"],
+              },
+            },
+          },
+        };
+      </script>
+</head>
+<body class="bg-white font-common">
+    <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+          <div class="text-zinc-800 font-bold uppercase">
+            <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+            <p class="text-[10px] font-normal capitalize -mt-1">
+              Get ready to Quiz and be amazed!
+            </p>
+          </div>
+          <button id="backHome"
+            class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
+          >
+            Back to Home
+          </button>
+        </nav>
+      </header>
+      <!-- Header/Navbar section end -->
+
+
+ <!-- Landing page content start -->
+ <section class="container mx-auto py-4">
+ <div class="mb-4 p-3">
+    <h4 class="font-semibold">1. What is the difference among map,filter,foreach and find in javascript?</h4>
+    <p>
+        The map() method creates a new array populated with the results of calling a provided function on every element in the calling array. The forEach() method executes a provided function once for each array element. The filter() method creates a new array filled with elements that pass a test provided by a function. The filter() method does not execute the function for empty elements. The filter() method does not change the original array. The find() method returns the value of the first element that passes a test. The find() method executes a function for each array element. The find() method returns undefined if no elements are found.
+    </p>
+ </div>
+
+ <div class="mb-4 p-3">
+    <h4 class="font-semibold">2. What is the difference among session storage, local storage and cookies </h4>
+    <p>
+        sessionStorage is similar to localStorage ; the difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever a document is loaded in a particular tab in the browser, a unique page session gets created and assigned to that particular tab. A cookie is an amount of information that persists between a server-side and a client-side. A web browser stores this information at the time of browsing. A cookie contains the information as a string generally in the form of a name-value pair separated by semi-colons.
+    </p>
+ </div>
+
+
+ <div class="mb-4 p-3">
+    <h4 class="font-semibold">3. how event loop works in javascript</h4>
+    <p>
+        The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.
+    </p>
+ </div>
+
+
+ </section>
+
+
+    <script src="./blog.js"></script>
+</body>
+</html>
